@@ -48,4 +48,16 @@ class Place {
 
    
 
+    public function update($n,$a,$s,$e,$id) {
+          
+        $req = 'UPDATE places SET name=:n , address=:a,start_time=:s,"end_time"=:e where id=:id';
+         $stmt = $this->db->prepare($req);
+        $stmt->bindParam(':n', $n);
+    $stmt->bindParam('a', $a);
+    $stmt->bindParam(':s', $s);
+    
+    $stmt->bindParam(':e', $e);
+    $stmt->bindParam(':id', $id);
+          return $stmt->execute();
+    }
 }
