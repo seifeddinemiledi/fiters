@@ -1,6 +1,8 @@
 <?php
   $controllers = array('user'=>['index','details','delete','edit','create'],
-  'coache'=>['index','details','delete','edit','create'],'place'=>['index','details','delete','edit','create']);
+  'coache'=>['index','details','delete','edit','create'],
+  'place'=>['index','details','delete','edit','create'],
+  'pages'=>['home']);
   
                        
 
@@ -23,6 +25,7 @@
        break;
      
       case 'pages':
+       require_once('models/Home.php');
         $controller = new PagesController();
       break;
     }

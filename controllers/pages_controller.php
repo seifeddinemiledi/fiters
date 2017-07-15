@@ -2,11 +2,11 @@
   class PagesController {
 
     public function home() {
-    
-        global $session;
-
-        $session->display_session('panier');
-        die;
+    $home=new Home();
+    $nbrUser=$home->getNbrUser();
+    $nbrCoache=$home->getNbrCoache();
+    $nbrPlace=$home->getNbrPlace();
+    $nbrBooking=$home->getNbrBooking();
       require_once('views/pages/home.php');
     }
 

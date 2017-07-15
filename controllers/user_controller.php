@@ -26,7 +26,7 @@ public function details(){
 }
 public function delete(){    
     if(isset($_GET['id'])){
-    $user=new User();
+    $user=new User(); 
     $id=$_GET['id'];
     $user->delete($id);
     }

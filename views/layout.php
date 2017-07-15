@@ -146,7 +146,7 @@
                         <span>Dashboard</span>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="?action=index&controller=home"><i class="icon-speedometer"></i> Dashboard <span class="badge badge-info">NEW</span></a>
+                        <a class="nav-link" href="?action=home&controller=pages"><i class="icon-speedometer"></i> Dashboard <span class="badge badge-info">NEW</span></a>
                     </li>
                     <li class="divider"></li>
                     <li class="nav-item">
