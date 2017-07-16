@@ -7,6 +7,10 @@
     $nbrCoache=$home->getNbrCoache();
     $nbrPlace=$home->getNbrPlace();
     $nbrBooking=$home->getNbrBooking();
+    $nbrPayed=$home->getpayedbooking();
+    $nbrnotPayed=$home->getnotpayedbooking();
+    $sessionstart=$home->sessionstart();
+    $coachActive=$home->coachActive();
       require_once('views/pages/home.php');
     }
 

@@ -1,6 +1,6 @@
 <!-- Breadcrumb -->
             <ol class="breadcrumb mb-0">
-                <li class="breadcrumb-item">User</li>
+                <li class="breadcrumb-item">Booking</li>
                 <li class="breadcrumb-item ">Détails</li>
                 <li class="breadcrumb-item active"><?php  echo $data['id']  ?></li>
             </ol>
@@ -10,11 +10,11 @@
                         <div class="col-sm-6 col-md-4">
                             <div class="card">
                                 <div class="card-header">
-                                    Nom / Prénom
+                                    User
                                 </div>
                                 <div class="card-block">
-                                <?php echo $data['firstname'] ?>
-                                <?php echo $data['lastname'] ?>
+                                <?php echo $data['user_f'] ?>
+                                <?php echo $data['user_f'] ?>
                                 </div>
                             </div>
                         </div>
@@ -22,10 +22,10 @@
                         <div class="col-sm-6 col-md-4">
                             <div class="card">
                                 <div class="card-header">
-                                   Téléphone
+                                   Coache
                                 </div>
                                 <div class="card-block">
-                                (<?php echo $data['phonePrefixNumber'] ?>) <?php echo $data['phoneNumber'] ?>
+                                (<?php echo $data['coache_f'] ?>) <?php echo $data['coache_l'] ?>
                                 </div>
                             </div>
                         </div>
@@ -33,14 +33,24 @@
                         <div class="col-sm-6 col-md-4">
                             <div class="card">
                                 <div class="card-header">
-                                    Email
+                                Start_Time,End_Time
                                 </div>
                                 <div class="card-block">
-                                <?php echo $data['email'] ?>
+                                  (<?php echo $data['start_time'] ?>) <?php echo $data['end_time'] ?>
                                 </div>
                             </div>
                         </div>
                         <!--/.col-->
+                           <div class="col-sm-6 col-md-4">
+                            <div class="card">
+                                <div class="card-header">
+                                Address
+                                </div>
+                                <div class="card-block">
+                                <?php echo $data['address'] ?>
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
                         <!--/.col-->
@@ -48,28 +58,7 @@
                         <!--/.col-->
                        
                    
-                    <div class="row">
-                        <div class="col-sm-5 col-md-4">
-                            <div class="card">
-                                <div class="card-block p-0 clearfix">
-                                    <i class="fa fa-laptop bg-primary p-2 px-3 font-2xl mr-1 float-left"></i>
-                                    <div class="h5 mb-0 pt-1 text-center"><?php echo count($cnxs) ?></div>
-                                    <div class="text-muted text-uppercase font-weight-bold font-xs text-center">Connexions</div>
-                                </div>
-                            </div>
-                        </div>
-                        <!--/.col-->
-
-                        <div class="col-sm-5 col-md-4">
-                            <div class="card">
-                                <div class="card-block p-0 clearfix">
-                                    <i class="fa fa-moon-o bg-danger p-2 px-3 font-2xl mr-1 float-left"></i>
-                                    <div class="h5 mb-0 pt-1 text-center"><?php echo count($books); ?></div>
-                                    <div class="text-muted text-uppercase font-weight-bold font-xs text-center">Réservations</div>
-                                </div>
-                            </div>
-                        </div>
-                        </div>
+                 
                         <!--/.col
 
                         <div class="col-sm-6 col-lg-3">

@@ -154,15 +154,15 @@
                     </li>
                     <li class="divider"></li>
                     <li class="nav-item">
-                        <a class="nav-link" href="?action=index&controller=coache"><i class="icon-speedometer"></i>Coaches </a>
+                        <a class="nav-link" href="?action=index&controller=coache"><i class="icon-fire"></i>Coaches </a>
                     </li>
                     <li class="divider"></li>
                     <li class="nav-item">
-                        <a class="nav-link" href="?action=index&controller=place"><i class="icon-speedometer"></i>Places </a>
+                        <a class="nav-link" href="?action=index&controller=place"><i class="icon-location-pin"></i>Places </a>
                     </li>
                     <li class="divider"></li>
                     <li class="nav-item">
-                        <a class="nav-link" href="?action=index&controller=booking"><i class="icon-speedometer"></i>Bookings </a>
+                        <a class="nav-link" href="?action=index&controller=booking"><i class="icon-credit-card"></i>Bookings </a>
                     </li>
                     <li class="divider"></li>
                 </ul>
